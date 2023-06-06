@@ -14,3 +14,5 @@ This is a portfolio website built using React, Node Sass, and styled-components.
 **Demo URL:** [Portfolio 7 Demo](https://profile7.vercel.app/)
 
 Feel free to explore the portfolio website to learn more about the developer's work and skills.
+
+![Home.img](https://i.ibb.co/FXxtCfX/647f50cb1a50521542136e53.jpg)
