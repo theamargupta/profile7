@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import mountainBackground from '../../Assets/Stock-Mac-Wallpaper.jpg';
-import styled, { css } from 'styled-components';
+import React, { useState } from "react";
+import mountainBackground from "../../Assets/Stock-Mac-Wallpaper.jpg";
+import styled, { css } from "styled-components";
 // Components
-import Header from '../../Components/Header';
-import Navigation from '../../Components/Navigation';
+import Header from "../../Components/Header";
+import Navigation from "../../Components/Navigation";
 
 //  Style Components
 const Section = styled.section`
@@ -44,16 +44,15 @@ const GlassSlider = styled.div`
     `}
 `;
 
-export default () => {
+const ProjectComp = () => {
   const [active, setActive] = useState(false);
   return (
     <Section>
       <Header active={active} setActive={setActive} />
       {active && <GlassSlider active={active} />}
-      <BackgroundImg src={mountainBackground} alt='MountainBackground' />
+      <BackgroundImg src={mountainBackground} alt="MountainBackground" />
       <Navigation active={active} />
     </Section>
   );
 };
-
-
+export default ProjectComp;

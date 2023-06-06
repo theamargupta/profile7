@@ -1,5 +1,5 @@
-import React from 'react';
-import styled, { css } from 'styled-components';
+import React from "react";
+import styled, { css } from "styled-components";
 
 const Content = styled.div`
   position: relative;
@@ -36,7 +36,7 @@ const Content = styled.div`
       transition-delay: 0s;
     `}
 `;
-export default ({ active }) => {
+const ContentComp = ({ active }) => {
   return (
     <Content active={active}>
       <h2>
@@ -48,4 +48,4 @@ export default ({ active }) => {
   );
 };
 
-
+export default ContentComp;

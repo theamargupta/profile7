@@ -1,10 +1,11 @@
-import React, { Suspense } from 'react';
-import './index.scss';
-import AppRoute from '../Router';
-import Loader from '../Components/Loader';
+import React, { Suspense } from "react";
+import "./index.scss";
+import AppRoute from "../Router";
+import Loader from "../Components/Loader";
 
-export default () => (
+const App = () => (
   <Suspense fallback={<Loader />}>
     <AppRoute />
   </Suspense>
 );
+export default App;

@@ -57,7 +57,7 @@ const Toggle = styled.div`
     `}
 `;
 
-export default ({ active, setActive }) => {
+const HeaderComp = ({ active, setActive }) => {
   return (
     <Header>
       <Link to='/'>Web D</Link>
@@ -69,3 +69,4 @@ export default ({ active, setActive }) => {
     </Header>
   );
 };
+export default HeaderComp

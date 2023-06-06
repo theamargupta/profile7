@@ -1,6 +1,6 @@
-import React from 'react';
-import { socialMedia } from '../Utility/data';
-import styled, { css } from 'styled-components';
+import React from "react";
+import { socialMedia } from "../Utility/data";
+import styled, { css } from "styled-components";
 
 const List = styled.ul`
   position: absolute;
@@ -38,7 +38,7 @@ const Item = styled.li`
   }
 `;
 
-export default ({ active }) => {
+const SocialMediaComp = ({ active }) => {
   return (
     <List>
       {socialMedia.map(({ title, url }, index) => (
@@ -49,3 +49,4 @@ export default ({ active }) => {
     </List>
   );
 };
+export default SocialMediaComp;

@@ -49,7 +49,7 @@ const NavItem = styled.li`
   }
   /* nested component end */
 `;
-export default ({ active }) => {
+const NavigationComp =  ({ active }) => {
   return (
     <Navigation>
       {list.map(({ title, url }, index) => (
@@ -60,3 +60,4 @@ export default ({ active }) => {
     </Navigation>
   );
 };
+export default NavigationComp
