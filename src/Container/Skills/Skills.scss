@@ -1,0 +1,43 @@
+.skill-page {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  .title {
+    color: white;
+    text-align: center;
+    margin-top: 29px;
+    margin-bottom: 28px;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 30px;
+    grid-template-rows: 1fr;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .grid {
+    @media screen and (max-width: 600px) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 60px;
+      width: 100%;
+    }
+  }
+}
+
+/*position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);*/

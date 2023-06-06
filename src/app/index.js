@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import './index.scss';
+import AppRoute from '../Router';
+import Loader from '../Components/Loader';
 
-function App() {
-  return <div className='App'>amar</div>;
-}
-
-export default App;
+export default () => (
+  <Suspense fallback={<Loader />}>
+    <AppRoute />
+  </Suspense>
+);
